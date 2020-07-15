@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NBA Game Finder</title>
+    <meta name="description" content="Find NBA Games on Youtube">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3561e8befe.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+    <div class="content">
+        <form>
+            <div class="form-container">
+                <div class="form-item">
+                    <input type="search" onfocus="this.value=''" id="search-input" placeholder="Search for team"
+                        required>
+                    <button type="button" class="search-btn"><i class="fas fa-search"></i> </button>
+                    <ul id="match-liste-ul"></ul>
+                </div>
+                <div class="form-item">
+                    <label for="start-date">Start date:</label></br>
+                    <input type="date" name="start-date" class="start-date" value="2019-10-05">
+                </div>
+                <div class="form-item">
+                    <label for="end-date">End date:</label></br>
+                    <input type="date" name="end-date" class="end-date" value="2020-02-20">
+                </div>
+                <div class="form-item">
+                    <label for="game-number">Number of games:</label></br>
+                    <input type="number" name="game-number" class="game-number" min="1" max="25" value="10">
+                </div>
+                <div class="form-item">
+                    <button id='submit' type="button">Search Games</button>
+                </div>
+            </div>
+        </form>
+        <div class="game-list-container">
+            <ul class="game-list"></ul>
+        </div>
+    </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
